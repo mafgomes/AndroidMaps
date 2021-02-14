@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMaps">
 
+        <!-- Pegamos o manifest placeholder definido no build gradle do app -->
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="${googleMapApiKey}"/>
 
