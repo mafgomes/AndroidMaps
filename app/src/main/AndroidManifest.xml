@@ -4,6 +4,18 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- Permissão para obter a localização precisa (usando GPS) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--
+        Permissão necessária para obter a localização com o app em background,
+        necessária a partir da versão 10 (API 29).
+
+        Para que o app seja aprovado na loja, se ele pedir para usar essa permissão,
+        é necessário que o desenvolvedor declare uma política de privacidade para
+        tal tipo de uso, dizendo como e por que a permissão é usada.
+     -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
